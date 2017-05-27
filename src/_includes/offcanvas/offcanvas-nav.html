@@ -1,0 +1,29 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign header_links = site.header_links | default: default_paths %}
+{% assign header_class = page.header.class | default: "dark" %}
+{% capture header_img %}assets/img/minty-ross-header-logo-{{ header_class }}.png{% endcapture %}
+
+<nav class="offcanvas-nav">
+	<div class="offcanvas-nav-close align-right row">
+		<div class="header-logo small-9 columns">
+			<a class="header-logo-link" href="{{ "/" | relative_url }}">
+				<img src="{{ "/assets/img/minty-ross-header-logo-dark.png" | relative_url }}" alt="{{ site.title }} logo">
+			</a>	
+		</div>
+		<div class="shrink column offcanvas-nav-close-btn">
+			<i class="fa fa-times"></i>	
+		</div>
+	</div>
+	{% if header_links %}
+	<ul class="row">
+		{% for header_link in header_links %}
+            {% assign linked_page = site.pages | where: "url", header_link.path | first %}
+            {% assign title = header_link.title | default: linked_page.title %}
+            {% capture url %}{{ linked_page.url }}{% if header_link.anchor %}#{{ header_link.anchor }}{% endif %}{% endcapture %}
+            <li class="offcanvas-nav-link small-12 columns">
+            	<a href="{{ url | relative_url }}" title="{{ title | escape }}">{{ title | escape }}</a>	
+            </li>
+      	{% endfor %}
+	</ul>
+	{% endif %}
+</nav>

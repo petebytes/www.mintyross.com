@@ -1,0 +1,24 @@
+{
+  "name": "www.mintyross.com",
+  "description": "Website www.mintyross.com",
+  "main": "index.js",
+  "authors": [
+    "Tyrone Saunders"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "^6.3.1",
+    "font-awesome": "^4.7.0"
+  },
+  "dependencies": {
+  }
+}

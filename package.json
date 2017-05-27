@@ -1,0 +1,27 @@
+{
+  "name": "www.mintyross.com",
+  "version": "1.0.0",
+  "description": "Jekyll static website for www.mintyross.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp && bundle exec jekyll build",
+    "serve": "gulp && concurrently -k \"bundle exec jekyll serve\" \"gulp watch\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyrone Saunders",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "vinyl-fs": "^2.4.4"
+  },
+  "dependencies": {}
+}

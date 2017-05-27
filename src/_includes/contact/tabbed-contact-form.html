@@ -1,0 +1,18 @@
+<div class="contact-form no-js">
+	<div class="contact-form-tabs-nav align-center row">
+		{% for form in page.forms %}
+		<div class="contact-form-nav-link-container small-12 medium-5 large-3 columns">
+			<a href="#" class="contact-form-nav-link">{{ form.title }}</a>
+		</div>
+		{% endfor %}
+	</div>
+	{% for form in page.forms %}
+		{% include contact/forms/{{ form.name }}.html %}
+	{% endfor %}
+</div>
+<div class="contact-form-busy"></div>
+<div class="contact-form-success align-center row">
+	<div class="text-center small-12 columns">
+		Thank you for your inquiry. We'll contact you shortly.
+	</div>
+</div>

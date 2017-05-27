@@ -1,0 +1,93 @@
+.hero-content {
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  
+  &.dark {
+    color: rgba(0, 0, 0, 0.85);
+    
+    a:link {
+      color: rgba(0, 0, 0, 0.85);;
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgba(0, 0, 0, 0.85);;
+      text-decoration: none;
+    }
+    a:hover {
+      color: lighten(rgba(0, 0, 0, 0.85), 25%);
+      text-decoration: none;
+    }
+    a:active {
+      color: lighten(rgba(0, 0, 0, 0.85), 25%);
+      text-decoration: none;
+    }
+    
+  }
+  
+  &.light {
+    color: rgba(255, 255, 255, 0.85);
+    
+    a:link {
+      color: rgba(255, 255, 255, 0.85);;
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgba(255, 255, 255, 0.85);;
+      text-decoration: none;
+    }
+    a:hover {
+      color: darken(rgba(255, 255, 255, 0.85), 25%);
+      text-decoration: none;
+    }
+    a:active {
+      color: darken(rgba(255, 255, 255, 0.85), 25%);
+      text-decoration: none;
+    }
+  }
+}
+
+.hero-foreground-container {
+  height: 100%;
+}
+
+.hero-image-heading {
+  font-size: 0rem;
+  color: transparent;
+}
+
+.hero-excerpt {
+  padding-bottom: 2.5rem;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 0.95rem;
+  font-family: $proxima-nova;
+}
+
+.hero-description {
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  font-family: $gill-sans;
+}

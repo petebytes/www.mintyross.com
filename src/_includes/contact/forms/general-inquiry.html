@@ -1,0 +1,52 @@
+<div class="contact-form-tab">
+	<div class="contact-form-tab-content">
+		<form id="general-inquiry-form" novalidate>
+			<input type="hidden" name="formId" value="1">
+			<input type="hidden" name="baseUrl" value="{{ site.mautic_base_url }}">
+			<section class="general-info row column">
+				<div class="row">
+					<div id="general-inquiry-name" class="small-12 medium-6 columns">
+						<label for="general-inquiry-name">Name: <abbr class="required" title="required">*</abbr></label>
+						<input type="text" name="general-inquiry-name" required>
+						<span class="form-error"></span>
+					</div>
+					<div id="general-inquiry-company" class="small-12 medium-6 columns">
+						<label for="general-inquiry-company">Company:</label>
+						<input type="text" name="general-inquiry-company">
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="general-inquiry-email" class="small-12 medium-4 columns">
+						<label for="general-inquiry-email">Email: <abbr class="required" title="required">*</abbr></label>
+						<input type="email" name="general-inquiry-email" required>
+						<span class="form-error"></span>
+					</div>
+					<div id="general-inquiry-website" class="small-12 medium-4 columns">
+						<label for="general-inquiry-website">Website:</label>
+						<input type="url" name="general-inquiry-website">
+						<span class="form-error"></span>
+					</div>
+					<div id="general-inquiry-phone" class="small-12 medium-4 columns">
+						<label for="general-inquiry-phone">Phone:</label>
+						<input type="tel" name="general-inquiry-phone">
+						<span class="form-error"></span>
+					</div>
+				</div>
+			</section>
+			<section class="general-inquiry row column">
+				<div class="row">
+					<div id="general-inquiry" class="small-12 columns">
+						<label for="general-inquiry">What's on your mind?</label>
+						<textarea name="general-inquiry" placeholder="What's on your mind?"></textarea>
+						<span class="form-error"></span>	
+					</div>	
+				</div>
+			</section>
+			<section class="submit-form row column">
+				<button type="submit">Send</button>
+				<span class="form-error"></span>
+			</section>
+		</form>
+	</div>
+</div>

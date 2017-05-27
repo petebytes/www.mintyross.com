@@ -1,0 +1,249 @@
+<div class="contact-form-tab">
+	<div class="contact-form-tab-content">
+		<form id="creative-work-inquiry-form" novalidate>
+			<input type="hidden" name="formId" value="2">
+			<input type="hidden" name="baseUrl" value="{{ site.mautic_base_url }}">
+			<section class="general-info row column">
+				<div class="row">
+					<div id="creative-work-name" class="small-12 medium-6 columns">
+						<label for="creative-work-name">Name: <abbr class="required" title="required">*</abbr></label>
+						<input type="text" name="creative-work-name" required>
+						<span class="form-error"></span>
+					</div>
+					<div id="creative-work-company" class="small-12 medium-6 columns">
+						<label for="creative-work-company">Company:</label>
+						<input type="text" name="creative-work-company">
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-email" class="small-12 medium-4 columns">
+						<label for="creative-work-email">Email: <abbr class="required" title="required">*</abbr></label>
+						<input type="email" name="creative-work-email" required>
+						<span class="form-error"></span>
+					</div>
+					<div id="creative-work-website" class="small-12 medium-4 columns">
+						<label for="creative-work-website">Website:</label>
+						<input type="url" name="creative-work-website">
+						<span class="form-error"></span>
+					</div>
+					<div id="creative-work-phone" class="small-12 medium-4 columns">
+						<label for="creative-work-phone">Phone:</label>
+						<input type="tel" name="creative-work-phone">
+						<span class="form-error"></span>
+					</div>
+				</div>
+			</section>
+			<section class="business-info row column">
+				<h3>Your Business <small>Tell us a little bit about your business.</small></h3>
+				<div class="row">
+					<div id="creative-work-products" class="small-12 columns">
+						<label for="creative-work-products">What products and services does your business offer? <abbr class="required" title="required">*</abbr></label>
+						<textarea name="creative-work-products" placeholder="We'd like to get a general idea of what it is that your company does.  Tell us about some of your products and services and how they solve your customers' problems." required></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-apart" class="small-12 columns">
+						<label for="creative-work-apart">What sets you apart? <abbr class="required" title="required">*</abbr></label>
+						<textarea name="creative-work-apart" placeholder="We'd love to learn more about who we are collaborating with.  What sets your business apart from your competition? We'd like to hear about things like your history and achievements or your branding, team, and mission.  Try to be as descriptive as possible." required></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">	
+					<div id="creative-work-mission" class="small-12 columns">
+						<label for="creative-work-mission">What is your company's mission and vision?</label>
+						<textarea name="creative-work-mission" placeholder="Describe why your company exists and what the future for your company looks like."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+			</section>
+			<section class="project-info row column">
+				<h3>The Project <small>Share some of your initial ideas for the project you'd like to bring to life.</small></h3>
+				<div class="row">
+					<div id="creative-work-project" class="small-12 columns">
+						<label for="creative-work-project">What are your initial ideas and what are any specific deadlines that you have in mind? <abbr class="required" title="required">*</abbr></label>
+						<textarea name="creative-work-project" placeholder="Describe the project that you have in mind." required></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-audience" class="small-12 columns">
+						<label for="creative-work-audience">Who is your target audience? <abbr class="required" title="required">*</abbr></label>
+						<textarea name="creative-work-audience" 
+							placeholder="All products, companies, and services strive to reach a specific group of people; who are they?  Getting down to specifics we might ask how old are they, what is their education and income, what are their interests, occupations, and hobbies.  Also, what problem does your company solve for them?" required></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-investing" class="small-12 columns">
+						<label for="creative-work-investing">Why are you interested in investing in this project? <abbr class="required" title="required">*</abbr></label>
+						<textarea name="creative-work-investing" 
+							placeholder="Every project has some goals behind it.  Thinking about your project what business values does it offer?  Some examples are growing an audience, streamlining communication, entering a new market, or revamping your image.  Explain the reason behind this project and its goals." required></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-positive-negative" class="small-12 columns">
+						<label for="creative-work-positive-negative">What do you think is positive and what do you think is negative about your current offering?</label>
+						<textarea name="creative-work-positive-negative" placeholder="Look at what you currently offer your audience. Describe what you think is positive about your current offering and what is negative."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-position" class="small-12 columns">
+						<label for="creative-work-position">What is your current state?</label>
+						<textarea name="creative-work-position" placeholder="Explain how your current relationships with customers are structured and the channels you use to reach them."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+			</section>
+			<section class="functional-info row column">
+				<h3>Functionality <small>To achieve your goals what does the project need to offer.</small></h3>
+				<div class="row">
+					<div id="creative-work-deliverables" class="small-12 columns">
+						<label for="creative-work-deliverables">What are the deliverables?</label>
+						<textarea name="creative-work-deliverables" placeholder="Describe the tangible and quantifiable things that you anticipate being required for this project."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-checklist" class="column row">
+						<fieldset class="fieldset form-checklist">
+							<legend>Click any items you think you will need for this project</legend>
+							<div class="row align-center">
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-website" type="checkbox" name="cw-website">
+									<label class="check-button" for="cw-website">Website</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-website-blog" type="checkbox" name="cw-website-blog">
+									<label class="check-button" for="cw-website-blog">Website w/blog</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-website-store" type="checkbox" name="cw-website-store">
+									<label class="check-button" for="cw-website-store">Website w/online shop</label>
+								</div>
+							</div>
+							<div class="row align-center">
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-website-user"  type="checkbox" name="cw-website-user">
+									<label class="check-button" for="cw-website-user">Website w/user accounts</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-website-gallery" type="checkbox" name="cw-website-gallery">
+									<label class="check-button" for="cw-website-gallery">Website w/multimedia gallery</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-website-map"  type="checkbox" name="cw-website-map">
+									<label class="check-button" for="cw-website-map">Website w/maps</label>
+								</div>
+							</div>
+							<div class="row align-center">
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-print" type="checkbox" name="cw-print">
+									<label class="check-button" for="cw-print">Print media</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-flyers"  type="checkbox" name="cw-flyers">
+									<label class="check-button" for="cw-flyers">Flyers</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-leaflets" type="checkbox" name="cw-leaflets">
+									<label class="check-button" for="cw-leaflets">Leaflets</label>
+								</div>
+							</div>
+							<div class="row align-center">
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-campaign"  type="checkbox" name="cw-campaign">
+									<label class="check-button" for="cw-campaign">Marketing campaign</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-email-marketing" type="checkbox" name="cw-email-marketing">
+									<label class="check-button" for="cw-email-marketing">Email marketing</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-social" type="checkbox" name="cw-social">
+									<label class="check-button" for="cw-social">Social media management</label>
+								</div>
+							</div>
+							<div class="row align-center">
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-video" type="checkbox" name="cw-video">
+									<label class="check-button" for="cw-video">Video production</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-audio"  type="checkbox" name="cw-audio">
+									<label class="check-button" for="cw-audio">Audio production</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-photography" type="checkbox" name="cw-photography">
+									<label class="check-button" for="cw-photography">Photography</label>
+								</div>
+							</div>
+							<div class="row align-center">
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-illustration" type="checkbox" name="cw-illustration">
+									<label class="check-button" for="cw-illustration">Illustration</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-copy" type="checkbox" name="cw-copy">
+									<label class="check-button" for="cw-copy">Copy writing</label>
+								</div>
+								<div class="checkbox-container small-12 large-4 columns">
+									<input id="cw-branding" type="checkbox" name="cw-branding">
+									<label class="check-button" for="cw-branding">Branding (logos, icons, colors)</label>
+								</div>
+							</div>	
+						</fieldset>
+					</div>
+				</div>
+			</section>
+			<section class="aesthetic-info row column">
+				<h3>Aesthetics <small>What look and feel are you going for.</small></h3>
+				<div class="row">
+					<div id="creative-work-colors" class="small-12 columns">
+						<label for="creative-work-colors">What colors or color scheme are associated with your brand or this project?</label>
+						<textarea name="creative-work-colors" placeholder="Describe the look and feel you are looking for with the project or point us to your brand image if you have one already."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-examples" class="small-12 columns">
+						<label for="creative-work-examples">What are some examples of designs or related organizations that you admire?</label>
+						<textarea name="creative-work-examples" placeholder="Provide a few examples, about 3 to 5, of designs you admire and point out things you like and dislike about them."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-words" class="small-12 columns">
+						<label for="creative-work-words">What words would you like people to associate with your project?</label>
+						<textarea name="creative-work-words" placeholder="Try to provide some insight into how you want people to view this project.  For example, a discount airline might want to be associated with the words, 'affordable', comfortable', and 'safe'."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+			</section>
+			<section class="implementation-info row column">
+				<h3>Implementation <small>How will you maintain and operate this project in the future.</small></h3>
+				<div class="row">
+					<div id="creative-work-marketing" class="small-12 columns">
+						<label for="creative-work-marketing">How will you spread the word about this project?</label>
+						<textarea name="creative-work-marketing" placeholder="Describe the channels you will use to market this project and how you intend to reach your target audience."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div id="creative-work-support" class="small-12 columns">
+						<label for="creative-work-support">What kind of support will this project require?</label>
+						<textarea name="creative-work-support" placeholder="Try to quantify how much support this project will require from your team in-house or from external vendors in order to remain operational."></textarea>
+						<span class="form-error"></span>
+					</div>
+				</div>
+			</section>
+			<section class="submit-form row column">
+				<button type="submit">Send</button>
+				<span class="form-error"></span>
+			</section>
+		</form>
+	</div>
+</div>

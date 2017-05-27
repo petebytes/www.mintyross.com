@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div id="capabilities-list" class="page-content">
+	<h1 class="page-title text-center">{{ page.title }}</h1>
+	{% for capability in site.capabilities %}
+		<section id="{{ capability.title | slugify }}" class="info-section row">
+			<h2 class="small-12 medium-4 columns">
+				<a href="{{ capability.url | relative_url }}" title="{{ capability.title }}">{{ capability.title }}</a>
+			</h2>
+			<div class="small-12 medium-8 columns">
+				<p class="row column">{{ capability.excerpt | markdownify }}</p>
+				<h3 class="row column">Services</h3>
+				<div class="row">
+					{% for service in capability.services %}
+						{% assign srvc = site.data.services | where: "id", service | first %}
+						<div class="small-12 column"><a class="underlined-link" href="{{ capability.url | relative_url }}#{{ srvc.id }}" title="{{ srvc.title }}">{{ srvc.title }}</a></div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+	{% endfor %}
+</div>
+<div class="page-content">
+	{{content}}
+</div>

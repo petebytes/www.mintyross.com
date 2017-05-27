@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% if page.page-content %}
+	<div class="page-content">
+		<h1 class="page-title text-center">{{ page.title }}</h1>
+		{% if page.page-content.sections %}
+			{% for section in page.page-content.sections %}
+				<section class="info-section row">
+					<h2 class="small-12 medium-4 columns">
+						{% if section.title %}
+							{% if section.link.url %}
+								<a href="{{ section.link.url | relative_url }}" title="section.link.title">{{ section.title }}</a>
+							{% else %}
+								{{ section.title }}
+							{% endif %}
+						{% endif %}
+						{% if section.collections %}
+							{% for collection_hash in section.collections %}
+								{% assign collection_docs = site.documents | where: "collection", collection_hash.name %}
+								{% for displayed_doc_name in collection_hash.docs %}
+									{% assign displayed_doc = collection_docs | where: "title", displayed_doc_name | first %}
+										{% if displayed_doc.title %}
+											{{ displayed_doc.title }}
+										{% endif %}
+								{% endfor %}
+							{% endfor %}
+						{% endif %}
+					</h2>
+					<div class="small-12 medium-8 columns">
+						{% if section.description %}
+							<div class="row">
+								<div class="small-12 columns">{{ section.description | markdownify }}</div>	
+							</div>
+						{% endif %}
+						{% if section.collections %}
+							{% for collection_hash in section.collections %}
+								{% assign collection_docs = site.documents | where: "collection", collection_hash.name %}
+								{% for displayed_doc_name in collection_hash.docs %}
+									{% assign displayed_doc = collection_docs | where: "title", displayed_doc_name | first %}
+									<div class="row">
+										{% if displayed_doc.description %}
+											<div class="small-12">{{ displayed_doc.description | markdownify }}</div>
+										{% endif %}
+									</div>
+								{% endfor %}
+							{% endfor %}
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		{% endif %}
+	</div>
+{% endif %}
+<div class="page-content">
+	{{content}}
+</div>

@@ -1,0 +1,41 @@
+{
+	"dest": {
+		"js": {
+			"site": "src/assets/js",
+			"vendor": "src/assets/js"
+		},
+		"fonts": {
+			"site": "src/assets/fonts",
+			"vendor": "src/assets/fonts"
+		}
+	},
+	"src": {
+		"js" : {
+			"site": "src/assets/js/site/*.js",
+			"vendor": "src/assets/js/vendor/*.js"
+		},
+		"vendor": {
+			"js": [],
+			"fonts": [
+				"bower_components/font-awesome/fonts/*.*"
+			],
+			"styles": [],
+			"stylePartials": {
+				"foundation-sites": [
+					"bower_components/foundation-sites/**/*.scss",
+					"!bower_components/foundation-sites/assets",
+					"!bower_components/foundation-sites/customizer",
+					"!bower_components/foundation-sites/dist",
+					"!bower_components/foundation-sites/js",
+					"!bower_components/foundation-sites/.github"
+				],
+				"font-awesome": [
+					"bower_components/font-awesome/**/*.scss",
+					"!bower_components/font-awesome/fonts",
+					"!bower_components/font-awesome/less",
+					"!bower_components/font-awesome/css"
+				]
+			}
+		}
+	}
+}

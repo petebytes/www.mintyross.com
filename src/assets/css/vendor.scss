@@ -1,0 +1,10 @@
+---
+---
+
+// Foundation 6
+@import 'site/foundation-settings';
+@import 'scss/foundation';
+@include foundation-everything($flex: true);
+
+// font awesome
+@import "font-awesome";

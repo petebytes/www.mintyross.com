@@ -1,0 +1,96 @@
+- id: audience-engagement
+  title: Audience Engagement
+  description: |
+    We study existing audience behaviors and interactions to create new opportunities for engagement.
+    We look at existing and potential audience touchpoints to build specific ways to involve audience participation and suggestion actions based on the collected information.
+    The audience engagement tools we use include email, social media, real-time digital products, and in-person engagement.
+- id: brand-identity
+  title: Brand Identity
+  description: |
+    Brands are more than color schemes and logos.
+    Brands communicate an organization's vision and drive experiences.
+    We develop unique brand identities for organizations that reinforce their capabilities and promote positive experiences and audience engagement.
+- id: business-development
+  title: Business Development
+  description: |
+    When businesses are looking to grow, pivot, or capitalize on new opportunities we help them meet their goals.
+    Our business development strategy is focused on helping businesses find partners and pursue new strategic opportunities.
+    To facilitate this, we evaluate the gaps in the current offerings of businesses and where they want to be to help them enter new markets, reach customers over new channels, launch new products, and develop critical relationships.
+- id: campaigns
+  title: Campaigns
+  description: |
+    Our marketing campaigns are grounded in careful research for flawless execution of clear goals.
+    We work to understand our clients' position in the market which we then use to identify opportunities to reach their audience.
+- id: customer-intelligence
+  title: Customer Intelligence
+  description: |
+    We help clients understand their customers.
+    Through our research, we provide our clients with demographic and sentiment information.
+    We provide solutions based on the customer intelligence that helps clients optimize product and service mix, pricing, promotions, and product availability.
+- id: e-commmerce
+  title: eCommerce
+  description: |
+    We implement e-commerce platforms that streamline the selling of products online.
+    Our team helps businesses take order, accept payments, and expand their reach nationally or globally.
+    Through our e-commerce solutions we level the playing field for small businesses so they can can be as impactful as large global businesses.
+- id: engineering
+  title: Engineering
+  description: |
+    Our engineering services span both the physical world and the digital world.
+    We offer prototyping services that take our clients from idea to their goal.
+    With years of experience in manufacturing our engineering team is capable of planning manufacturing for production runs.
+- id: growth-hacking
+  title: Growth Hacking
+  description: |
+    With growth hacking we look beyond marketing to grow a customer base.
+    We recognize there are opportunities for growth beyond marketing in areas like product, operations, and human resources.
+    Our approach to cross functional growth looks at impediments to growth like language barriers or ease of use and implements solutions to tackle those problems.
+- id: market-development
+  title: Market Development
+  description: |
+    We help our clients identify and develop new markets for their products and services.
+    Through research and analysis, we share with them our findings so they can understand the world outside of their businesses.
+    Our team helps our clients face and understand challenges like country rules, proper market positioning, and logistical issues.
+    By collaborating with our clients, we help them establish marketing campaigns and tackle operational issues such as import/export, fulfillment, distribution, inventory management, and warehousing.
+- id: mobile-app-design
+  title: Mobile App Design
+  description: |
+    We are focused on designing mobile solutions that leverage the power of devices while providing an enjoyable and intuitive user experience.
+- id: mobile-platforms
+  title: Mobile Platforms
+  description: |
+    Our team builds mobile apps for iOS and Android devices to engage customers and deliver products and services on the go.
+- id: operations
+  title: Operations
+  description: |
+    We help our clients get a handle on their operations.
+    Through collaboration with our clients we help them build the capabilities to get their business running smoothly.
+    By digging deep and understanding our client's current situation we can help them implement operational solutions for fulfillment, distribution, inventory, shipping, and manufacturing.
+- id: print-materials
+  title: Print Materials
+  description: |
+    When companies are looking to bring their branding into the physical world we provide art direction for business cards, stationery, brochures, booklets, and posters.
+- id: research
+  title: Research
+  description: |
+    Minty Ross provides market research and customer research for its clients.
+    We gather, analyze, and interpret information from public and commercial sources and first-hand accounts such as surveys and interviews to provide the information our clients need to make educated decisions.
+- id: social-media
+  title: Social Media
+  description: |
+    We understand the importance of social media in today's landscape.  We develop multi-channel social media campaigns for our clients as well as develop social media strategies.
+- id: user-experience
+  title: User Experience
+  description: |
+    Our focus on user needs translates into intuitive products and services developed for our clients.
+    User experiences designed by Minty Ross consider the users' behavior over devices and avoids retention killing designs.
+- id: web-applications
+  title: Web Applications
+  description: |
+    Minty Ross develops web applications in languages such as PHP, Ruby, Python, and JavaScript.
+    We can meet our client's needs for e-commerce, API implementation, online community development, and messaging.
+- id: web-design
+  title: Web Design
+  description: |
+    Web design at Minty Ross is done with the intent to make beautiful yet intuitive websites.
+    We have the capability to design from scratch or by using frameworks such as WordPress or Jekyll. 

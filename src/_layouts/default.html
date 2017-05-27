@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+
+    {% include {{ page.header.include | default: "header/header.html" }} %}
+    {% include offcanvas/offcanvas-nav.html %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include {{ page.footer.include | default: "footer/footer.html" }} %}
+	
+	<script>
+	    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+	        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+	        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','{{ site.mautic_base_url }}/mtc.js','mt');
+	
+	    mt('send', 'pageview');
+	</script>
+  </body>
+
+</html>

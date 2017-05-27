@@ -1,0 +1,78 @@
+@mixin keyframe-mixin($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation-mixin($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+
+// https://www.script-tutorials.com/night-sky-with-twinkling-stars/
+@include keyframe-mixin(move-twinkle-mask) {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+@include keyframe-mixin(move-clouds) {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background-color: #000000;
+  background-image: url('../img/stars.png');
+  background-repeat: repeat;
+  background-position: top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background-color: transparent;
+  background-image: url('../img/twinkle-mask.png');
+  background-repeat: repeat;
+  background-position: top center;
+  z-index: 1;
+  @include animation-mixin('move-twinkle-mask 200s linear infinite');
+}
+
+.clouds {
+  background-color: transparent;
+  background-image: url('../img/clouds.png');
+  background-repeat: repeat;
+  background-position: top center;
+  z-index: 3;
+  @include animation-mixin('move-clouds 200s linear infinite');
+}

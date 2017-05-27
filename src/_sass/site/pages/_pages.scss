@@ -1,0 +1,60 @@
+div.page-content {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #000000;
+  
+  .page-title {
+    font-family: $gill-sans;//font-family: $proxima-nova;
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  section.info-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: $baskerville;
+    font-size: 1.25rem;
+    border-bottom: solid 1px #000000;
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: $gill-sans;//font-family: $proxima-nova;
+      font-style: normal;
+      font-weight: 300;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a:link, a:visited {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    a:hover, a:active {
+      color: lighten(#000000, 25%);
+      text-decoration: underline;
+    }
+    
+    a.underlined-link:link, a.underlined-link:visited {
+      color: #000000;
+      text-decoration: underline;
+    }
+    
+    a.underlined-link:hover, a.underlined-link:active {
+      color: lighten(#000000, 25%);
+      text-decoration: underline;
+    }
+      
+  }
+  
+  section.info-section:last-child {
+    border-bottom: none;
+  }
+}

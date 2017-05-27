@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% if page.hero.type %}
+	{% capture hero_file %}hero/hero-{{ page.hero.type }}.html{% endcapture %}
+	{% include {{ hero_file }} %}
+{% endif %}
+
+<section id="get-in-touch" class="contact-wrapper">
+	{{ content }}
+</section>

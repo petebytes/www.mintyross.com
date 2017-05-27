@@ -1,0 +1,25 @@
+@mixin aspect-ratio($width, $height) {
+  // usage: @include aspect-ratio(16, 9);
+  width: 100%;
+  padding-bottom: percentage($height/$width);
+  position: relative;
+  > div {
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+  }
+}
+
+.aspect-ratio-16x9 {
+  @include aspect-ratio(16, 9);
+}
+
+.aspect-ratio-21x9 {
+  @include aspect-ratio(21, 9);
+}
+
+.aspect-ratio-4x3 {
+  @include aspect-ratio(4, 3);
+}

@@ -1,0 +1,34 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign header_links = site.header_links | default: default_paths %}
+{% assign header_class = page.header.class | default: "dark" %}
+{% capture header_img %}assets/img/minty-ross-header-logo-{{ header_class }}.png{% endcapture %}
+
+<header class="site-header header-relative {{ header_class }}">
+	<div class="header-nav align-middle expanded row">
+		<div class="header-logo small-9 medium-3 columns">
+			<a class="header-logo-link" href="{{ "/" | relative_url }}">
+				<img src="{{ header_img | relative_url }}" alt="{{ site.title }} logo">
+			</a>	
+		</div>
+		<nav class="header-nav-container small-3 medium-9 columns">
+			<div class="header-nav row align-middle align-right">
+				<div class="header-menu-toggle-btn hide-for-large small-3 columns">
+					<i class="fa fa-bars float-right" aria-hidden="true"></i>
+				</div>	
+				{% if header_links %}
+				<nav class="header-nav-links show-for-large medium-12 columns">
+					<ul>
+						{% for header_link in header_links %}
+				            {% assign linked_page = site.pages | where: "url", header_link.path | first %}
+				            {% assign title = header_link.title | default: linked_page.title %}
+				            {% capture url %}{{ linked_page.url }}{% if header_link.anchor %}#{{ header_link.anchor }}{% endif %}{% endcapture %}
+				            <li class="header-nav-link float-right">
+				            	<a href="{{ url | relative_url }}" title="{{ title | escape }}">{{ title | escape }}</a>	
+				            </li>
+			          	{% endfor %}
+					</ul>
+				</nav>
+				{% endif %}
+			</div>
+		</nav>
+</header>

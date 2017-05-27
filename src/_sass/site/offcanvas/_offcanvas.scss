@@ -1,0 +1,27 @@
+@mixin offcanvas_horizontal($width, $height, $start_x, $end_x) {
+  // usage: @include offcanvas_horizontal(50, 100, 200, 100);
+  position: fixed;
+  width: percentage($width/100);
+  height: percentage($height/100);
+  z-index: 50;
+  transform: translateX(percentage($start_x/100));
+  transition: transform ease .25s;
+  &.is-active {
+    // javascript toggles 'is-active' class
+    transform: translateX(percentage($end_x/100));
+  }
+}
+
+@mixin offcanvas_vertical($width, $height, $start_y, $end_y) {
+  // usage: @include offcanvas_vertical(50, 100, 200, 100);
+  position: fixed;
+  width: percentage($width/100);
+  height: percentage($height/100);
+  z-index: 50;
+  transform: translateY(percentage($start_y/100));
+  transition: transform ease .25s;
+  &.is-active {
+    // javascript toggles 'is-active' class
+    transform: translateY(percentage($end_y/100));
+  }
+}

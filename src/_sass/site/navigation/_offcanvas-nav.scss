@@ -1,0 +1,65 @@
+nav.offcanvas-nav {
+  font-family: $proxima-nova;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 1rem;
+  
+  
+  div.offcanvas-nav-close {
+    margin-bottom: 2rem;
+  }
+  
+  div.offcanvas-nav-close-btn {
+    cursor: pointer;
+    
+    i:hover {
+      color: lighten(#000000, 25%);
+    }
+  }
+  
+  a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: lighten(#000000, 25%);
+    text-decoration: underline;
+  }
+  a:active {
+    color: lighten(#000000, 25%);
+    text-decoration: underline;
+  }
+    
+  ul {
+    list-style-type: none;
+    li {
+      display: block;
+      padding: .5rem .5rem;
+    } 
+  }
+  
+  /* Small only */
+  @media screen and (max-width: 39.9375em) {
+    // $width, $height, $start_x, $end_x
+    @include offcanvas_horizontal(85, 100, -100, 0);
+  }
+  
+  /* Medium only */
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    // $width, $height, $start_x, $end_x
+    @include offcanvas_horizontal(40, 100, -100, 0);
+  }
+  
+  /* Large and up */
+  @media screen and (min-width: 64em) {
+    // $width, $height, $start_x, $end_x
+    @include offcanvas_horizontal(40, 100, -100, 0);
+  }
+}

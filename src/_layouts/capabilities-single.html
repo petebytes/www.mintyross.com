@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div id="capabilities-single" class="page-content">
+	<h1 class="page-title text-center">{{ page.title }}</h1>
+	<section id="{{ page.title | slugify }}" class="info-section">
+		<div class="capability-description column row">
+			{{ page.description | markdownify }}
+		</div>
+		{% if page.services %}
+			<div class="row">
+				<h2 class="small-12 medium-4 columns">Services</h2>
+				<div class="small-12 medium-8 columns">
+				{% for service in page.services %}
+					{% assign srvc = site.data.services | where: "id", service | first %}
+					<div id="{{ srvc.id | slugify }}" class="row">
+						<h3 class="small-12 small-centered columns">{{ srvc.title }}</h3>
+						<p class="small-12 small-centered columns">{{ srvc.description | markdownify }}</p>
+					</div>
+				{% endfor %}	
+				</div>
+			</div>
+		{% endif %}
+	</section>
+</div>
+<div class="page-content">
+	{{content}}
+</div>

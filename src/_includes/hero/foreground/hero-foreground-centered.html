@@ -1,0 +1,26 @@
+<div class="hero-foreground-container align-middle row">
+	<div class="small-12 column">
+		{% if page.hero.foreground.heading.type == 'image' %}
+		<div class="align-center row">
+			<h1 class="hero-image-heading text-center hide-for-small-only medium-6 column">
+				<img src="{{ page.hero.foreground.heading.img | relative_url }}" alt="{{page.hero.foreground.heading.alt}}" title="{{page.hero.foreground.heading.title}}">
+				{{page.hero.foreground.heading.title | markdownify }}
+			</h1>
+		</div>
+		{% endif %}
+		{% if page.hero.foreground.excerpt %}
+		<div class="align-center row">
+			<div class="hero-excerpt text-center small-12 medium-4 columns">
+				{{ page.hero.foreground.excerpt | markdownify }}
+			</div>
+		</div>
+		{% endif %}
+		{% if page.hero.foreground.description %}
+		<div class="align-center row">
+			<div class="hero-description text-center hide-for-small-only medium-9 columns">
+				{{ page.hero.foreground.description | markdownify}}
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</div>

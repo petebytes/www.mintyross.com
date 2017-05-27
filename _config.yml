@@ -1,0 +1,93 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Perfecting the Art of Commerce
+email: tyrone.saunders@yahoo.com
+description: > # this means to ignore newlines until "baseurl:"
+  Minty Ross was created to take part in compelling opportunities in the branded good and service sectors.
+  We work as partners with existing companies to foster their inherent creativity and solve problems through technology.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.mintyross.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: tyronemsaunders
+github_username:  tyronemsaunders
+mautic_base_url: http://mautic.mintyross.com/index.php
+
+# Set links that will appear in the header
+header_links:
+  - path: /about/
+  - path: /about/capabilities/
+  - path: /about/approach-and-process/
+  - path: /about/approach-and-process/
+    anchor: inquiry
+    title: "Hire Us"
+sass:
+  load_paths:
+    - _sass
+    - _sass/vendor/foundation-sites
+    - _sass/vendor/foundation-sites/_vendor
+    - _sass/vendor/foundation-sites/scss
+    - _sass/vendor/font-awesome 
+    - _sass/vendor/font-awesome/scss
+# Build settings
+source: src
+destination: dist
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - bower_components
+  - package.json
+  - bower.json
+  - gulpfile.js
+  - gulp-config.json
+  - _sass/_vendor
+  - readme.md
+defaults:
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      header:
+        include: "header/header.html"
+      footer: 
+        include: "footer/footer.html"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      header:
+        include: "header/header.html"
+      footer: 
+        include: "footer/footer.html"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header:
+        include: "header/header.html"
+      footer: 
+        include: "footer/footer.html"
+collections:
+  approach-and-process:
+    output: false
+  capabilities:
+    output: true
+    permalink: /about/:collection/:path/

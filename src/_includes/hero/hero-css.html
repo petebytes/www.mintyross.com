@@ -1,0 +1,14 @@
+{% capture aspect-ratio %}aspect-ratio-{{ page.hero.aspect_ratio }}{% endcapture %}
+
+<section class="hero {{aspect-ratio}}">
+	<div class="hero-content">
+		<div class="hero-background">
+			{% for element in page.hero.elements %}
+			<div class="{{ element.class }}"></div>
+			{% endfor %}
+		</div>
+		<div class="hero-foreground {{page.hero.foreground.class}}">
+			{% include {{ page.hero.foreground.include }} %}
+		</div>
+	</div>
+</section>
