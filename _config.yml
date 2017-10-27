@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.mintyross.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tyronemsaunders
 github_username:  tyronemsaunders
-mautic_base_url: http://mautic.mintyross.com/index.php
+mautic_base_url: https://mautic.mintyross.com/index.php
 
 # Set links that will appear in the header
 header_links:

@@ -21,7 +21,7 @@ hero:
   aspect_ratio: 16x9
 forms:
   - name: general-inquiry
-    title: General Inqury
+    title: General Inquiry
   - name: creative-work-inquiry
     title: Creative Work
 ---
